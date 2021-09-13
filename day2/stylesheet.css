@@ -1,13 +1,85 @@
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap');
 
+/* LIGHT MODE */
+.box-light {
+    color: rgb(32, 32, 32);
+}
+
+.box-light .content-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow:rgba(32, 32, 32, 0.568) 2px 2px 5px;
+    transition: 200ms linear;
+}
+
+.box-light .content-box:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.box-light h1 {
+    border-bottom: 3px solid rgb(32, 32, 32);
+}
+
+.box-light .emphasis {
+    background-color: rgba(224, 101, 183, 0.24);
+}
+
+.box-light a {
+    color:rgb(36, 28, 71);
+}
+
+.box-light a:hover {
+    background-color:rgb(36, 28, 71);
+    color: white;
+}
+
+.box-light #credit {
+    color: white;
+}
+
+.box-light #credit a {
+    color:rgb(184, 170, 247);
+}
+
+/* DARK MODE */
+.box-dark {
+    color: rgb(216, 216, 216);
+}
+
+.box-dark .content-box {
+    background-color: rgba(53, 65, 54, 0.5);
+    box-shadow:rgba(0, 0, 0, 0.568) 2px 2px 5px;
+    transition: 200ms linear;
+}
+
+.box-dark .content-box:hover {
+    background-color: rgba(12, 12, 12, 0.925);
+}
+
+.box-dark h1 {
+    border-bottom: 3px solid rgb(238, 238, 238);
+}
+
+.box-dark .emphasis {
+    background-color: rgba(63, 6, 44, 0.24);
+}
+
+.box-dark a {
+    color:rgb(135, 116, 221);
+}
+
+.box-dark a:hover {
+    background-color:rgb(180, 177, 192);
+    color: rgb(58, 58, 58);
+}
+
+/* OTHERS / LAYOUT */
 body {
     background-color: gray; /* fallback */
     background-image: url('https://images.unsplash.com/photo-1534453981081-612615621db2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80');
     background-position: center right;
     background-attachment: fixed;
-
-    color: rgb(32, 32, 32);
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -18,13 +90,7 @@ body {
 
 .content-box {
     padding: 40px 20px 60px 20px;
-    margin: 15px;
-    background-color: rgba(255, 255, 255, 0.5);
-    box-shadow:rgba(32, 32, 32, 0.568) 2px 2px 5px;
-}
-
-.content-box:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    margin: -20px 15px 0 15px;
 }
 
 #box1 {
@@ -35,15 +101,10 @@ h1 {
     font-size: 3em;
     font-family: 'Arima Madurai';
     padding-bottom: 15px;
-    border-bottom: 3px solid rgb(32, 32, 32);
 }
 
 h2 {
     text-align: center;
-}
-
-.emphasis {
-    background-color: rgba(224, 101, 183, 0.24);
 }
 
 li {
@@ -53,12 +114,6 @@ li {
 
 a {
     text-decoration: none;
-    color:rgb(36, 28, 71);
-}
-
-a:hover {
-    background-color:rgb(36, 28, 71);
-    color: white;
 }
 
 #social-links li {
@@ -67,7 +122,6 @@ a:hover {
 
 #credit {
     font-size: 2em;
-    color: white;
     text-align: center;
     margin-bottom: 150px;
     font-weight: bold;
@@ -75,5 +129,10 @@ a:hover {
 }
 
 #credit a {
-    color:rgb(184, 170, 247);
+    color:rgb(185, 180, 209);
+}
+
+#button-light, #button-dark {
+    padding: 10px;
+    font-size: 1.2em;
 }
